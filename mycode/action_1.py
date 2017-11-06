@@ -33,5 +33,35 @@ mut.printp(x)
 y = np.ones_like(x) * 5
 mut.printp(y)
 
-m = np.arange(1,4,1)
+m = np.arange(1, 4, 1)
 mut.printp(m)
+
+x = [1, 2]
+y = np.asarray(x)
+mut.printp(type(y))
+
+x = np.array([[1, 2], [3, 4]])
+y = np.asmatrix(x)
+mut.printp(type(y))
+
+x = [3, 4]
+y = np.asfarray(x)
+y = np.asarray(x, float)
+
+x = np.array([30])  # can only convert an array of size 1 to a Python scalar
+y = np.asscalar(x)
+mut.printp(type(y))
+
+x = np.array([1, 2, 3])
+y = np.copy(x)
+mut.printp(id(x))
+mut.printp(id(y))
+print x, y
+
+x = np.linspace(3., 10, 20)
+mut.printp(x)
+
+x = np.logspace(3., 10, 20, endpoint=False)
+y = np.logspace(3., 10, 20)
+mut.printp(x)
+mut.printp(y)
