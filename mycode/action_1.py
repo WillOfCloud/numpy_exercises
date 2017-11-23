@@ -4,10 +4,7 @@ __author__ = 'Liujuhao'
 # TODO Array_creation_routines
 
 import numpy as np
-import sys
 import my_utils as mut
-
-print sys._getframe().f_lineno
 
 mut.printp(np.empty([2, 2], int))
 
